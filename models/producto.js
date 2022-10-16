@@ -1,6 +1,6 @@
 const {db}=require('../config/db');
 const {DataTypes}=require('sequelize');
-
+const {Item}=require('../models/item');
 const Producto=db.define('producto',{
     idProducto:{
         type:DataTypes.INTEGER,
@@ -23,5 +23,15 @@ const Producto=db.define('producto',{
     tableName:'producto'
 });
 
+
+Producto.hasMany(Item,{
+    foreignKey:'idProducto',
+    sourceKey:'idProducto'
+});
+
+Item.belongsTo(Producto,{
+    foreignKey:'idProducto',
+    targetId:'idProducto'
+});
 
 module.exports={Producto};

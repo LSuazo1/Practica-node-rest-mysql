@@ -19,6 +19,9 @@ const Producto = db.define('producto', {
     },
     precio: {
         type: DataTypes.DOUBLE
+    },
+    img: { 
+        type: DataTypes.STRING
     }
 
 }, {

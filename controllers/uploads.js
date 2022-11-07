@@ -1,4 +1,4 @@
-const path = require('path');
+/*const path = require('path');
 const fs = require('fs');
 
 const { subirArchivo } = require('../helpers/subir-archivo');
@@ -66,7 +66,7 @@ const actualizarImagen = async (req, res) => {
 
     //res.json(producto);
 }
-//sss
+
 
 const subirImagenes = (archivo) => {
 
@@ -110,4 +110,4 @@ module.exports = {
     cargarArchivo,
     actualizarImagen,
     mostrarImagen
-}
+}*/
